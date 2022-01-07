@@ -1,0 +1,68 @@
+:root {
+	--border: 2px solid orangered;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	background-color: #d8d8d8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 3em;
+}
+
+form {
+	border: var(--border);
+	padding: 1em;
+	width: 70%;
+	margin: auto;
+	text-align: center;
+}
+form div {
+	margin: 0.8em auto;
+}
+
+form input[type="number"] {
+	background-color: transparent;
+	border: none;
+	border-bottom: var(--border);
+	outline: none;
+}
+
+form input[type="submit"] {
+	background-color: transparent;
+	border: var(--border);
+	padding: 1em;
+}
+
+form input[type="submit"]:hover {
+	background-color: orangered;
+	color: snow;
+	cursor: pointer;
+	transition: all 0.8s ease-in-out;
+}
+
+table {
+	margin: 1em auto;
+	width: fit-content;
+	border: var(--border);
+	text-align: center;
+	border-collapse: collapse;
+}
+
+table td {
+	padding: 0.2em 1em;
+	border: var(--border);
+}
+
+
+.primitive {
+	background-color: rgba(243, 243, 93, 0.986);
+}
