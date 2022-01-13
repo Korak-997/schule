@@ -8,8 +8,7 @@
     "Gurke",
     "Mortadella"
   ];
-  // erst die elments array Alphabetisch sortieren
-  usort($elements,'strnatcasecmp');
+ 
 
   // dann durch die Elemente gehen und davon ein neue Liste genieren
   function get_menu_combination($arr) {
@@ -29,6 +28,11 @@
 
   // leer elemente löschen
   $menus = array_filter($menus);
+  
+  // Array sortieren nach Anzahl der Elemente und Alphabet
+  usort($menus, function($a, $b){
+    return count($a) > count($b);
+  }, 'strnatcasecmp');
 ?>
 
 <!DOCTYPE html>
