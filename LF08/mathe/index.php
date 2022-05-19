@@ -126,9 +126,6 @@
   </form>
 <?php
 elseif($showQuiz):
-  if($err){
-    echo "<p>$err</p>";
-  }
 ?>
 <form action="index.php" method="POST">
   <?php
